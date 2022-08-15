@@ -1,0 +1,21 @@
+type Query {
+    hello: String
+    bye: String
+    users: [User]
+    user(name: String!): User
+    foods: [Food]
+    food(name: String!): Food
+}
+
+type User {
+    name: String!
+    email: String!
+    password: String!
+}
+
+type Food {
+    name: String!
+    price: Float!
+    ingredients: [String!]!
+}
+
